@@ -95,17 +95,17 @@ include 'header.php';
         <div class="icon-card" style="margin-bottom:var(--space-4);">
           <div class="icon-badge"><i data-lucide="map-pin" aria-hidden="true"></i></div>
           <h3>Our Office</h3>
-          <p>5th Avenue, Playa del Carmen, Quintana Roo, Mexico</p>
+          <p>Calle 6 bis int 5, Colonia Centro, 77710 Playa del Carmen, Quintana Roo, Mexico</p>
         </div>
         <div class="icon-card" style="margin-bottom:var(--space-4);">
           <div class="icon-badge"><i data-lucide="phone" aria-hidden="true"></i></div>
           <h3>Call or WhatsApp</h3>
-          <p><a href="tel:+529841234567" style="color:var(--primary); font-weight:600;">+52 984 801 5201</a></p>
+          <p><a href="tel:+529848015201" style="color:var(--primary); font-weight:600;">+52 984 801 5201</a></p>
         </div>
         <div class="icon-card" style="margin-bottom:var(--space-4);">
           <div class="icon-badge"><i data-lucide="mail" aria-hidden="true"></i></div>
           <h3>Email</h3>
-          <p><a href="mailto:info@realestateinplayadelcarmen.com" style="color:var(--primary); font-weight:600;">info@realestateinplayadelcarmen.com</a></p>
+          <p><a href="mailto:infos@realestateinplayadelcarmen.com" style="color:var(--primary); font-weight:600;">infos@realestateinplayadelcarmen.com</a></p>
         </div>
         <div style="border-radius:var(--radius-md); overflow:hidden; box-shadow:var(--shadow-sm);">
           <iframe

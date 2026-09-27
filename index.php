@@ -78,71 +78,79 @@ include 'header.php';
 
     <div class="grid grid-4">
       <article class="property-card reveal-on-scroll">
+        <a href="/casa-tigrillo-playa-del-carmen" style="text-decoration:none;color:inherit;">
         <div class="property-media">
-          <img src="https://images.pexels.com/photos/37510897/pexels-photo-37510897.jpeg?auto=compress&cs=tinysrgb&h=500" alt="Modern oceanview condo balcony in Playacar" width="400" height="230" loading="lazy">
-          <span class="property-tag">Ocean View</span>
-          <span class="property-price">$285,000</span>
+          <img src="https://realestateinplayadelcarmen.com/wp-content/uploads/2023/04/casa-tigrillo-alberca-4-768x581.png" alt="House for sale in Tigrillo Playa Del Carmen" width="400" height="230" loading="lazy">
+          <span class="property-tag">Private Pool</span>
+          <span class="property-price">$350,000</span>
         </div>
         <div class="property-body">
-          <h3>2BR Condo — Playacar Phase II</h3>
-          <p class="property-loc"><i data-lucide="map-pin" aria-hidden="true"></i> Playacar, Playa del Carmen</p>
-          <div class="property-specs">
-            <span><i data-lucide="bed-double" aria-hidden="true"></i> 2 bed</span>
-            <span><i data-lucide="bath" aria-hidden="true"></i> 2 bath</span>
-            <span><i data-lucide="ruler" aria-hidden="true"></i> 105 m²</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="property-card reveal-on-scroll">
-        <div class="property-media">
-          <img src="https://images.pexels.com/photos/20192218/pexels-photo-20192218.jpeg?auto=compress&cs=tinysrgb&h=500" alt="Rooftop penthouse terrace near 5th Avenue Playa del Carmen" width="400" height="230" loading="lazy">
-          <span class="property-tag">Penthouse</span>
-          <span class="property-price">$650,000</span>
-        </div>
-        <div class="property-body">
-          <h3>Rooftop Penthouse — 5th Avenue</h3>
-          <p class="property-loc"><i data-lucide="map-pin" aria-hidden="true"></i> Centro, Playa del Carmen</p>
+          <h3>House Tigrillo — Playa Del Carmen</h3>
+          <p class="property-loc"><i data-lucide="map-pin" aria-hidden="true"></i> El Tigrillo, Playa del Carmen</p>
           <div class="property-specs">
             <span><i data-lucide="bed-double" aria-hidden="true"></i> 3 bed</span>
             <span><i data-lucide="bath" aria-hidden="true"></i> 3 bath</span>
-            <span><i data-lucide="ruler" aria-hidden="true"></i> 190 m²</span>
+            <span><i data-lucide="ruler" aria-hidden="true"></i> 216 m²</span>
           </div>
         </div>
+        </a>
       </article>
 
       <article class="property-card reveal-on-scroll">
+        <a href="/xama-luxury-condos" style="text-decoration:none;color:inherit;">
         <div class="property-media">
-          <img src="https://images.pexels.com/photos/28915352/pexels-photo-28915352.jpeg?auto=compress&cs=tinysrgb&h=500" alt="Contemporary villa with private pool in Selvamar" width="400" height="230" loading="lazy">
-          <span class="property-tag">Private Pool</span>
-          <span class="property-price">$420,000</span>
+          <img src="https://realestateinplayadelcarmen.com/wp-content/uploads/2023/04/AEREA-1-768x583.jpeg" alt="Luxury apartment XAMA Tulum" width="400" height="230" loading="lazy">
+          <span class="property-tag">Rooftop Pool</span>
+          <span class="property-price">$371,124</span>
         </div>
         <div class="property-body">
-          <h3>Contemporary Villa — Selvamar</h3>
-          <p class="property-loc"><i data-lucide="map-pin" aria-hidden="true"></i> Selvamar, Playa del Carmen</p>
+          <h3>XAMA Luxury Condos — Tulum</h3>
+          <p class="property-loc"><i data-lucide="map-pin" aria-hidden="true"></i> Aldea Zama, Tulum</p>
           <div class="property-specs">
-            <span><i data-lucide="bed-double" aria-hidden="true"></i> 3 bed</span>
-            <span><i data-lucide="bath" aria-hidden="true"></i> 3.5 bath</span>
-            <span><i data-lucide="ruler" aria-hidden="true"></i> 240 m²</span>
+            <span><i data-lucide="bed-double" aria-hidden="true"></i> 2 bed</span>
+            <span><i data-lucide="bath" aria-hidden="true"></i> 2 bath</span>
+            <span><i data-lucide="ruler" aria-hidden="true"></i> 114 m²</span>
           </div>
         </div>
+        </a>
       </article>
 
       <article class="property-card reveal-on-scroll">
+        <a href="/condo-mennese-38" style="text-decoration:none;color:inherit;">
         <div class="property-media">
-          <img src="https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=500" alt="Bright pre-construction studio apartment interior" width="400" height="230" loading="lazy">
-          <span class="property-tag">Pre-construction</span>
-          <span class="property-price">From $145,000</span>
+          <img src="https://realestateinplayadelcarmen.com/wp-content/uploads/2023/04/6-768x576.jpeg" alt="Condo MENNESE 38 Studio Playa Del Carmen" width="400" height="230" loading="lazy">
+          <span class="property-tag">5 min Beach</span>
+          <span class="property-price">$130,000</span>
         </div>
         <div class="property-body">
-          <h3>Studio & 1BR — Region 15</h3>
-          <p class="property-loc"><i data-lucide="map-pin" aria-hidden="true"></i> Region 15, Playa del Carmen</p>
+          <h3>MENNESE 38 Studio — Centro</h3>
+          <p class="property-loc"><i data-lucide="map-pin" aria-hidden="true"></i> Centro, Playa del Carmen</p>
           <div class="property-specs">
-            <span><i data-lucide="bed-double" aria-hidden="true"></i> 0-1 bed</span>
+            <span><i data-lucide="bed-double" aria-hidden="true"></i> Studio</span>
             <span><i data-lucide="bath" aria-hidden="true"></i> 1 bath</span>
-            <span><i data-lucide="ruler" aria-hidden="true"></i> 48 m²</span>
+            <span><i data-lucide="ruler" aria-hidden="true"></i> 35 m²</span>
           </div>
         </div>
+        </a>
+      </article>
+
+      <article class="property-card reveal-on-scroll">
+        <a href="/condo-taak-203" style="text-decoration:none;color:inherit;">
+        <div class="property-media">
+          <img src="https://realestateinplayadelcarmen.com/wp-content/uploads/2023/04/3-1-3-768x581.png" alt="Condo TAAK 203 Playa Del Carmen" width="400" height="230" loading="lazy">
+          <span class="property-tag">Rooftop Pool</span>
+          <span class="property-price">$111,000</span>
+        </div>
+        <div class="property-body">
+          <h3>TAAK 203 — Zona Ejidal</h3>
+          <p class="property-loc"><i data-lucide="map-pin" aria-hidden="true"></i> Zona Ejidal, Playa del Carmen</p>
+          <div class="property-specs">
+            <span><i data-lucide="bed-double" aria-hidden="true"></i> 1 bed</span>
+            <span><i data-lucide="bath" aria-hidden="true"></i> 1 bath</span>
+            <span><i data-lucide="ruler" aria-hidden="true"></i> 44 m²</span>
+          </div>
+        </div>
+        </a>
       </article>
     </div>
 

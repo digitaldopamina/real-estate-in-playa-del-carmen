@@ -6,15 +6,96 @@ $ogImage = 'https://images.pexels.com/photos/20192218/pexels-photo-20192218.jpeg
 include 'header.php';
 
 $properties = [
-  ['title'=>'2BR Condo — Playacar Phase II','zone'=>'playacar','type'=>'condo','price'=>285000,'beds'=>2,'baths'=>2,'m2'=>105,'tag'=>'Ocean View','img'=>'https://images.pexels.com/photos/37510897/pexels-photo-37510897.jpeg?auto=compress&cs=tinysrgb&h=500','alt'=>'Modern oceanview condo balcony in Playacar'],
-  ['title'=>'Rooftop Penthouse — 5th Avenue','zone'=>'centro','type'=>'condo','price'=>650000,'beds'=>3,'baths'=>3,'m2'=>190,'tag'=>'Penthouse','img'=>'https://images.pexels.com/photos/20192218/pexels-photo-20192218.jpeg?auto=compress&cs=tinysrgb&h=500','alt'=>'Rooftop penthouse terrace near 5th Avenue Playa del Carmen'],
-  ['title'=>'Contemporary Villa — Selvamar','zone'=>'selvamar','type'=>'villa','price'=>420000,'beds'=>3,'baths'=>4,'m2'=>240,'tag'=>'Private Pool','img'=>'https://images.pexels.com/photos/28915352/pexels-photo-28915352.jpeg?auto=compress&cs=tinysrgb&h=500','alt'=>'Contemporary villa with private pool in Selvamar'],
-  ['title'=>'Studio & 1BR — Region 15','zone'=>'region15','type'=>'condo','price'=>145000,'beds'=>1,'baths'=>1,'m2'=>48,'tag'=>'Pre-construction','img'=>'https://images.pexels.com/photos/8089172/pexels-photo-8089172.jpeg?auto=compress&cs=tinysrgb&h=500','alt'=>'Bright pre-construction studio apartment interior'],
-  ['title'=>'Family Villa with Garden — Zazil-Ha','zone'=>'zazil-ha','type'=>'villa','price'=>365000,'beds'=>4,'baths'=>3,'m2'=>280,'tag'=>'Family Home','img'=>'https://images.pexels.com/photos/20068205/pexels-photo-20068205.jpeg?auto=compress&cs=tinysrgb&h=500','alt'=>'Villa with garden and pool surrounded by tropical vegetation'],
-  ['title'=>'Beachfront 1BR Condo — El Cielo','zone'=>'el-cielo','type'=>'condo','price'=>310000,'beds'=>1,'baths'=>1,'m2'=>72,'tag'=>'Beachfront','img'=>'https://images.pexels.com/photos/34271104/pexels-photo-34271104.jpeg?auto=compress&cs=tinysrgb&h=500','alt'=>'Balcony overlooking the ocean in El Cielo Playa del Carmen'],
-  ['title'=>'Modern Loft — Centro','zone'=>'centro','type'=>'condo','price'=>198000,'beds'=>1,'baths'=>1,'m2'=>65,'tag'=>'Walk to Beach','img'=>'https://images.pexels.com/photos/7167073/pexels-photo-7167073.jpeg?auto=compress&cs=tinysrgb&h=500','alt'=>'Modern loft living room interior in downtown Playa del Carmen'],
-  ['title'=>'Gated Community Villa — Playacar Phase I','zone'=>'playacar','type'=>'villa','price'=>780000,'beds'=>4,'baths'=>4,'m2'=>340,'tag'=>'Golf Course','img'=>'https://images.pexels.com/photos/13201411/pexels-photo-13201411.jpeg?auto=compress&cs=tinysrgb&h=500','alt'=>'Luxury villa near golf course in Playacar'],
-  ['title'=>'Residential Lot — Region 15','zone'=>'region15','type'=>'lot','price'=>95000,'beds'=>0,'baths'=>0,'m2'=>350,'tag'=>'Build to Suit','img'=>'https://images.pexels.com/photos/35410014/pexels-photo-35410014.jpeg?auto=compress&cs=tinysrgb&h=500','alt'=>'Residential development lot in Playa del Carmen'],
+  [
+    'title'   => 'House for sale in Tigrillo Playa Del Carmen',
+    'zone'    => 'tigrillo',
+    'type'    => 'house',
+    'price'   => 350000,
+    'beds'    => 3,
+    'baths'   => 3,
+    'm2'      => 216,
+    'tag'     => 'Private Pool',
+    'img'     => 'https://realestateinplayadelcarmen.com/wp-content/uploads/2023/04/casa-tigrillo-alberca-4-768x581.png',
+    'alt'     => 'House for sale in Tigrillo Playa Del Carmen',
+    'address' => 'Calle olmos y cypres, El Tigrillo, Playa Del Carmen',
+    'desc'    => 'Spacious house with pool, BBQ, A/C, fully equipped kitchen and parking. Secure gated community with security 24/7, basketball court and kids area.',
+    'slug'    => 'casa-tigrillo-playa-del-carmen',
+  ],
+  [
+    'title'   => 'Buy luxury apartment in XAMA Tulum',
+    'zone'    => 'tulum',
+    'type'    => 'condo',
+    'price'   => 371124,
+    'beds'    => 2,
+    'baths'   => 2,
+    'm2'      => 114,
+    'tag'     => 'Rooftop Pool',
+    'img'     => 'https://realestateinplayadelcarmen.com/wp-content/uploads/2023/04/AEREA-1-768x583.jpeg',
+    'alt'     => 'Buy luxury apartment in XAMA Tulum',
+    'address' => 'Aldea Zama, Tulum',
+    'desc'    => 'Exclusive condo in Aldea Zama. Private rooftop pool, gym, front desk, elevator and lock-off system. 5 min walk to shops, supermarkets and restaurants.',
+    'slug'    => 'xama-luxury-condos',
+  ],
+  [
+    'title'   => 'Buy Condo MENNESE 38, Studio Apartment Playa Del Carmen',
+    'zone'    => 'centro',
+    'type'    => 'condo',
+    'price'   => 130000,
+    'beds'    => 0,
+    'baths'   => 1,
+    'm2'      => 35,
+    'tag'     => '5 min Beach',
+    'img'     => 'https://realestateinplayadelcarmen.com/wp-content/uploads/2023/04/6-768x576.jpeg',
+    'alt'     => 'Condo MENNESE 38 Studio Apartment Playa Del Carmen',
+    'address' => 'Calle 38 Norte esq Av. 25, Playa Del Carmen',
+    'desc'    => 'Turnkey studio with infinity pool, lounge, bar & grill, solarium and 24/7 security. Just 5 min walk from 5th Avenue and the beach.',
+    'slug'    => 'condo-mennese-38',
+  ],
+  [
+    'title'   => 'Studio for sale in Playa Del Carmen MELIORA 307',
+    'zone'    => 'centro',
+    'type'    => 'condo',
+    'price'   => 160000,
+    'beds'    => 0,
+    'baths'   => 1,
+    'm2'      => 29,
+    'tag'     => 'Ocean View',
+    'img'     => 'https://realestateinplayadelcarmen.com/wp-content/uploads/2023/04/2-1-768x576.jpg',
+    'alt'     => 'Studio MELIORA 307 Playa Del Carmen',
+    'address' => 'Calle 10 Norte Bis entre Ave. 20 y 25, Centro, Playa del Carmen',
+    'desc'    => 'Condohotel studio with rooftop ocean view, jacuzzi, gym and reception. Ideal for vacation rental income. 3 blocks from 5th Avenue.',
+    'slug'    => 'condo-meliora-307',
+  ],
+  [
+    'title'   => 'Condo for sale Playa Del Carmen TAAK 203',
+    'zone'    => 'ejidal',
+    'type'    => 'condo',
+    'price'   => 111000,
+    'beds'    => 1,
+    'baths'   => 1,
+    'm2'      => 44,
+    'tag'     => 'Rooftop Pool',
+    'img'     => 'https://realestateinplayadelcarmen.com/wp-content/uploads/2023/04/3-1-3-768x581.png',
+    'alt'     => 'Condo TAAK 203 Playa Del Carmen',
+    'address' => 'Calle 33 Sur Ejidal, Playa del Carmen',
+    'desc'    => 'Second floor condo in Zona Diamante. Rooftop pool, BBQ grill, gym. Steps from Centro Maya shopping center with cinema, supermarkets and banks.',
+    'slug'    => 'condo-taak-203',
+  ],
+  [
+    'title'   => 'Lands for sale — Francisco Uhmay',
+    'zone'    => 'tulum',
+    'type'    => 'lot',
+    'price'   => 55000,
+    'beds'    => 0,
+    'baths'   => 0,
+    'm2'      => 700,
+    'tag'     => 'Land 700–900 m²',
+    'img'     => 'https://realestateinplayadelcarmen.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-12-at-5.12.43-PM-768x576.jpeg',
+    'alt'     => 'Land for sale Francisco Uhmay between Tulum and Coba',
+    'address' => 'Between Tulum and Coba, Quintana Roo',
+    'desc'    => 'Plots of 700 to 900 m² located between Tulum and Coba. Ideal for eco-lodge or private villa development in a high-growth area.',
+    'slug'    => '',
+  ],
 ];
 ?>
 
@@ -37,13 +118,11 @@ $properties = [
         <option value="lot">Land / Lot</option>
       </select>
       <select id="f-zone">
-        <option value="">All Neighborhoods</option>
+        <option value="">All Zones</option>
         <option value="centro">Centro / 5th Ave</option>
-        <option value="playacar">Playacar</option>
-        <option value="zazil-ha">Zazil-Ha</option>
-        <option value="el-cielo">El Cielo</option>
-        <option value="selvamar">Selvamar</option>
-        <option value="region15">Region 15</option>
+        <option value="tigrillo">El Tigrillo</option>
+        <option value="ejidal">Zona Ejidal</option>
+        <option value="tulum">Tulum</option>
       </select>
       <select id="f-budget">
         <option value="">Any Budget</option>
@@ -71,13 +150,25 @@ $properties = [
           <span class="property-price">$<?php echo number_format($p['price']); ?></span>
         </div>
         <div class="property-body">
+          <?php if (!empty($p['slug'])): ?>
+          <h3><a href="/<?php echo $p['slug']; ?>" style="color:inherit;text-decoration:none;"><?php echo htmlspecialchars($p['title']); ?></a></h3>
+          <?php else: ?>
           <h3><?php echo htmlspecialchars($p['title']); ?></h3>
-          <p class="property-loc"><i data-lucide="map-pin" aria-hidden="true"></i> <?php echo ucwords(str_replace('-', ' ', $p['zone'])); ?>, Playa del Carmen</p>
+          <?php endif; ?>
+          <p class="property-loc"><i data-lucide="map-pin" aria-hidden="true"></i> <?php echo htmlspecialchars($p['address']); ?></p>
           <div class="property-specs">
+            <?php if ($p['beds'] > 0): ?>
             <span><i data-lucide="bed-double" aria-hidden="true"></i> <?php echo $p['beds']; ?> bed</span>
+            <?php else: ?>
+            <span><i data-lucide="bed-double" aria-hidden="true"></i> Studio</span>
+            <?php endif; ?>
             <span><i data-lucide="bath" aria-hidden="true"></i> <?php echo $p['baths']; ?> bath</span>
             <span><i data-lucide="ruler" aria-hidden="true"></i> <?php echo $p['m2']; ?> m²</span>
           </div>
+          <p style="font-size:0.88rem;color:var(--ink-soft);margin-top:0.5rem;line-height:1.4;"><?php echo htmlspecialchars($p['desc']); ?></p>
+          <?php if (!empty($p['slug'])): ?>
+          <a href="/<?php echo $p['slug']; ?>" class="btn btn-ghost" style="margin-top:0.75rem;font-size:0.85rem;padding:0.4rem 1rem;">View Details <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+          <?php endif; ?>
         </div>
       </article>
       <?php endforeach; ?>
