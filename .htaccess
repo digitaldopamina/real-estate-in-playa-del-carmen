@@ -1,0 +1,42 @@
+RewriteEngine On
+RewriteBase /
+
+# Remove .php extension - access clean URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^properties/?$ properties.php [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^neighborhoods/?$ neighborhoods.php [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^investment-guide/?$ investment-guide.php [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^about/?$ about.php [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^contact/?$ contact.php [L,QSA]
+
+# NOTE: /blog is handled by the existing WordPress installation mounted at this path.
+# Do not rewrite it to a PHP file here — WordPress manages its own routing.
+
+# Prevent direct .php access from being indexed twice (optional clean redirect)
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.php[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+ErrorDocument 404 /404.php
+
+# Basic security & performance headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript text/javascript
+</IfModule>
