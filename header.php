@@ -86,9 +86,6 @@ function isActive(string $path, string $current): string {
     </nav>
 
     <div class="header-actions">
-      <a href="tel:+529848015201" class="phone-link" aria-label="Call us">
-        <i data-lucide="phone" aria-hidden="true"></i> <span>+52 984 801 5201</span>
-      </a>
       <a href="/contact" class="btn btn-primary btn-sm">Get in Touch</a>
       <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
         <i data-lucide="menu" aria-hidden="true"></i>
