@@ -95,7 +95,7 @@ include 'header.php';
         <div class="icon-card" style="margin-bottom:var(--space-4);">
           <div class="icon-badge"><i data-lucide="map-pin" aria-hidden="true"></i></div>
           <h3>Our Office</h3>
-          <p>Calle 6 bis int 5, Colonia Centro, 77710 Playa del Carmen, Quintana Roo, Mexico</p>
+          <p>Calle 24, Colonia Ejido, 77710 Playa del Carmen, Quintana Roo, Mexico</p>
         </div>
         <div class="icon-card" style="margin-bottom:var(--space-4);">
           <div class="icon-badge"><i data-lucide="phone" aria-hidden="true"></i></div>
