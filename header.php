@@ -16,7 +16,9 @@ $ogImage = $ogImage ?? 'https://images.pexels.com/photos/17060218/pexels-photo-1
 $noindex = $noindex ?? false;
 $canonicalUrl = BASE_URL . route_url($pageKey, $lang);
 
-function isActive(string $key, string $current): string {
+$LANG_FLAGS = ['en' => '🇬🇧', 'es' => '🇲🇽', 'fr' => '🇫🇷'];
+
+function isActive(string \$key, string \$current): string {
     return $key === $current ? 'active' : '';
 }
 ?><!DOCTYPE html>
@@ -107,7 +109,7 @@ function isActive(string $key, string $current): string {
              hreflang="<?php echo $l; ?>" lang="<?php echo $l; ?>"
              title="<?php echo htmlspecialchars($LANG_META[$l]['name']); ?>"
              class="<?php echo $l === $lang ? 'active' : ''; ?>"
-             <?php echo $l === $lang ? 'aria-current="true"' : ''; ?>><?php echo $LANG_META[$l]['label']; ?></a>
+             <?php echo $l === $lang ? 'aria-current="true"' : ''; ?>><?php echo $LANG_FLAGS[$l]; ?> <?php echo $LANG_META[$l]['label']; ?></a>
         <?php endforeach; ?>
       </div>
 

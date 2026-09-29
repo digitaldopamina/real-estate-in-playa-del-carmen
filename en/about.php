@@ -94,11 +94,9 @@ include __DIR__ . '/../header.php';
 
 <section class="section section-primary">
   <div class="container">
-    <div class="stats-band">
-      <div><strong>15+</strong><span>Years of experience</span></div>
-      <div><strong>320+</strong><span>Properties closed</span></div>
+    <div class="stats-band" style="grid-template-columns: repeat(2, 1fr);">
+      <div><strong>20+</strong><span>Years of local experience</span></div>
       <div><strong>28</strong><span>Countries of origin, our clients</span></div>
-      <div><strong>4.9/5</strong><span>Average client rating</span></div>
     </div>
   </div>
 </section>
