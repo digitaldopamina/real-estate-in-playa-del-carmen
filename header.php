@@ -18,7 +18,7 @@ $canonicalUrl = BASE_URL . route_url($pageKey, $lang);
 
 $LANG_FLAGS = ['en' => '🇬🇧', 'es' => '🇲🇽', 'fr' => '🇫🇷'];
 
-function isActive(string \$key, string \$current): string {
+function isActive(string $key, string $current): string {
     return $key === $current ? 'active' : '';
 }
 ?><!DOCTYPE html>
