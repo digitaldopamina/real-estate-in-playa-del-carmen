@@ -1,42 +1,49 @@
-RewriteEngine On
-RewriteBase /
+Options -Indexes
+DirectoryIndex index.php
 
-# Remove .php extension - access clean URLs
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^properties/?$ properties.php [L,QSA]
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^neighborhoods/?$ neighborhoods.php [L,QSA]
+  # --- Static assets (skip rewriting) ---
+  RewriteRule ^(styles\.css|favicon\.ico|robots\.txt)$ - [L]
+  RewriteRule ^(images|assets|uploads)/.*$ - [L]
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^investment-guide/?$ investment-guide.php [L,QSA]
+  # --- Language homepages: /en/, /es/, /fr/ ---
+  RewriteRule ^en/?$   en/index.php  [L]
+  RewriteRule ^es/?$   es/index.php  [L]
+  RewriteRule ^fr/?$   fr/index.php  [L]
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^about/?$ about.php [L,QSA]
+  # --- English routes ---
+  RewriteRule ^en/properties/?$      en/properties.php   [L]
+  RewriteRule ^en/neighborhoods/?$   en/neighborhoods.php [L]
+  RewriteRule ^en/investment-guide/?$ en/investment-guide.php [L]
+  RewriteRule ^en/about/?$           en/about.php        [L]
+  RewriteRule ^en/contact/?$         en/contact.php      [L]
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^contact/?$ contact.php [L,QSA]
+  # --- Spanish routes ---
+  RewriteRule ^es/propiedades/?$       es/properties.php   [L]
+  RewriteRule ^es/barrios/?$           es/neighborhoods.php [L]
+  RewriteRule ^es/guia-de-inversion/?$ es/investment-guide.php [L]
+  RewriteRule ^es/nosotros/?$          es/about.php        [L]
+  RewriteRule ^es/contacto/?$          es/contact.php      [L]
 
-# NOTE: /blog is handled by the existing WordPress installation mounted at this path.
-# Do not rewrite it to a PHP file here — WordPress manages its own routing.
+  # --- French routes ---
+  RewriteRule ^fr/proprietes/?$           fr/properties.php   [L]
+  RewriteRule ^fr/quartiers/?$            fr/neighborhoods.php [L]
+  RewriteRule ^fr/guide-investissement/?$ fr/investment-guide.php [L]
+  RewriteRule ^fr/a-propos/?$             fr/about.php        [L]
+  RewriteRule ^fr/contact/?$              fr/contact.php      [L]
 
-# Prevent direct .php access from being indexed twice (optional clean redirect)
-RewriteCond %{THE_REQUEST} \s/([^.]+)\.php[\s?] [NC]
-RewriteRule ^ /%1 [R=301,L]
+  # --- Legacy English URLs (301 redirect to /en/...) ---
+  RewriteRule ^properties/?$      /en/properties      [R=301,L]
+  RewriteRule ^neighborhoods/?$   /en/neighborhoods   [R=301,L]
+  RewriteRule ^investment-guide/?$ /en/investment-guide [R=301,L]
+  RewriteRule ^about/?$           /en/about           [R=301,L]
+  RewriteRule ^contact/?$         /en/contact         [R=301,L]
+
+  # --- Blog: handled by WordPress, not rewritten ---
+  RewriteRule ^blog(/.*)?$  - [L]
+</IfModule>
 
 ErrorDocument 404 /404.php
-
-# Basic security & performance headers
-<IfModule mod_headers.c>
-  Header set X-Content-Type-Options "nosniff"
-  Header set X-Frame-Options "SAMEORIGIN"
-</IfModule>
-
-<IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/css application/javascript text/javascript
-</IfModule>

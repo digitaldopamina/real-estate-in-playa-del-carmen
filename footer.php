@@ -3,14 +3,14 @@
 <footer class="site-footer">
   <div class="container footer-grid">
     <div class="footer-brand">
-      <a href="/" class="logo logo-footer">
+      <a href="<?php echo L('home'); ?>" class="logo logo-footer">
         <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="100" height="100" rx="20" fill="#90E0EF"/>
           <path d="M50 20 L80 45 V80 H62 V60 H38 V80 H20 V45 Z" fill="#03045E"/>
         </svg>
         <span>Real Estate <em>in Playa del Carmen</em></span>
       </a>
-      <p>Your local, English-speaking real estate team for condos, villas and investment properties across Playa del Carmen and the Riviera Maya.</p>
+      <p><?php echo htmlspecialchars(ui('footer_about')); ?></p>
       <div class="social-links">
         <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i data-lucide="facebook" aria-hidden="true"></i></a>
         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i data-lucide="instagram" aria-hidden="true"></i></a>
@@ -19,43 +19,49 @@
     </div>
 
     <div class="footer-col">
-      <h3>Explore</h3>
+      <h3><?php echo ui('footer_explore'); ?></h3>
       <ul>
-        <li><a href="/properties">All Properties</a></li>
-        <li><a href="/neighborhoods">Neighborhoods</a></li>
-        <li><a href="/investment-guide">Investment Guide</a></li>
-        <li><a href="https://blog.realestateinplayadelcarmen.com/">Blog</a></li>
+        <li><a href="<?php echo L('properties'); ?>"><?php echo ui('footer_all_props'); ?></a></li>
+        <li><a href="<?php echo L('neighborhoods'); ?>"><?php echo ui('nav_neighborhoods'); ?></a></li>
+        <li><a href="<?php echo L('investment'); ?>"><?php echo ui('nav_investment'); ?></a></li>
+        <li><a href="https://blog.realestateinplayadelcarmen.com/" hreflang="en"><?php echo ui('nav_blog'); ?></a></li>
       </ul>
     </div>
 
     <div class="footer-col">
-      <h3>Company</h3>
+      <h3><?php echo ui('footer_company'); ?></h3>
       <ul>
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/contact">Contact</a></li>
+        <li><a href="<?php echo L('about'); ?>"><?php echo ui('footer_about_us'); ?></a></li>
+        <li><a href="<?php echo L('contact'); ?>"><?php echo ui('nav_contact'); ?></a></li>
+      </ul>
+      <ul class="footer-langs">
+        <?php foreach (SUPPORTED_LANGS as $l): ?>
+        <li><a href="<?php echo route_url($pageKey === '404' ? 'home' : $pageKey, $l); ?>" hreflang="<?php echo $l; ?>" lang="<?php echo $l; ?>"><?php echo htmlspecialchars($LANG_META[$l]['name']); ?></a></li>
+        <?php endforeach; ?>
       </ul>
     </div>
 
     <div class="footer-col">
-      <h3>Contact</h3>
+      <h3><?php echo ui('footer_contact_h'); ?></h3>
       <ul class="footer-contact">
-        <li><i data-lucide="map-pin" aria-hidden="true"></i> Calle 24, Playa del Carmen, Quintana Roo, Mexico</li>
+        <li><i data-lucide="map-pin" aria-hidden="true"></i> <?php echo htmlspecialchars(ui('footer_address')); ?></li>
         <li><i data-lucide="phone" aria-hidden="true"></i> <a href="tel:+529848015201">+52 984 801 5201</a></li>
-        <li><i data-lucide="mail" aria-hidden="true"></i> <a href="mailto:info@realestateinplayadelcarmen.com">info@realestateinplayadelcarmen.com</a></li>
+        <li><i data-lucide="mail" aria-hidden="true"></i> <a href="mailto:infos@realestateinplayadelcarmen.com">infos@realestateinplayadelcarmen.com</a></li>
       </ul>
     </div>
   </div>
 
   <div class="footer-bottom">
     <div class="container footer-bottom-inner">
-      <p>&copy; <?php echo date('Y'); ?> Real Estate in Playa del Carmen. All rights reserved.</p>
-      <p>Independent real estate advisory &mdash; not affiliated with any government entity.</p>
+      <p>&copy; <?php echo date('Y'); ?> Real Estate in Playa del Carmen. <?php echo htmlspecialchars(ui('footer_rights')); ?></p>
+      <p><?php echo htmlspecialchars(ui('footer_disclaimer')); ?></p>
     </div>
   </div>
 </footer>
 
 <script>
   if (window.lucide) { lucide.createIcons(); }
+  window.addEventListener('load', () => { if (window.lucide) { lucide.createIcons(); } });
 
   // Mobile menu toggle
   const menuToggle = document.getElementById('menu-toggle');
