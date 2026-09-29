@@ -16,7 +16,7 @@ $ogImage = $ogImage ?? 'https://images.pexels.com/photos/17060218/pexels-photo-1
 $noindex = $noindex ?? false;
 $canonicalUrl = BASE_URL . route_url($pageKey, $lang);
 
-$LANG_FLAGS = ['en' => '🇬🇧', 'es' => '🇲🇽', 'fr' => '🇫🇷'];
+$LANG_FLAGS = ['en' => '🇺🇸', 'es' => '🇲🇽', 'fr' => '🇫🇷'];
 
 function isActive(string $key, string $current): string {
     return $key === $current ? 'active' : '';
@@ -59,7 +59,8 @@ function isActive(string $key, string $current): string {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="https://unpkg.com/lucide@latest" defer></script>
-<link rel="stylesheet" href="/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="/styles.css?v=<?php echo filemtime(__DIR__ . '/styles.css'); ?>">
 
 <?php if (!empty($schemaJson)): ?>
 <script type="application/ld+json"><?php echo $schemaJson; ?></script>
@@ -119,4 +120,11 @@ function isActive(string $key, string $current): string {
     </div>
   </div>
 </header>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof twemoji !== 'undefined') {
+    twemoji.parse(document.querySelector('.lang-switcher'), { folder: 'svg', ext: '.svg' });
+  }
+});
+</script>
 <main>
