@@ -83,6 +83,7 @@ function isActive(string $path, string $current): string {
       <a href="/about" class="<?php echo isActive('/about', $currentPath); ?>">About</a>
       <a href="/contact" class="<?php echo isActive('/contact', $currentPath); ?>">Contact</a>
       <a href="https://blog.realestateinplayadelcarmen.com/" class="nav-blog">Blog</a>
+      <a href="/contact" class="nav-mobile-cta btn btn-primary btn-sm">Get in Touch</a>
     </nav>
 
     <div class="header-actions">
