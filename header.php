@@ -88,7 +88,7 @@ function isActive(string $path, string $current): string {
     <div class="header-actions">
       <a href="/contact" class="btn btn-primary btn-sm">Get in Touch</a>
       <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
-        <i data-lucide="menu" aria-hidden="true"></i>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
     </div>
   </div>
