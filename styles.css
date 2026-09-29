@@ -611,6 +611,8 @@ ul { padding: 0; margin: 0; list-style: none; }
   .z-section, .z-section.reverse .z-media { grid-template-columns: 1fr; }
   .z-section { grid-template-columns: 1fr; }
   .z-section.reverse .z-media { order: 0; }
+  .icon-card { padding: var(--space-4); }
+  .icon-card p, .icon-card a { word-break: break-word; overflow-wrap: break-word; }
   .form-grid { grid-template-columns: 1fr; }
 }
 
