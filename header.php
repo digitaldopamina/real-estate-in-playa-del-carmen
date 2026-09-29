@@ -83,11 +83,9 @@ function isActive(string $path, string $current): string {
       <a href="/about" class="<?php echo isActive('/about', $currentPath); ?>">About</a>
       <a href="/contact" class="<?php echo isActive('/contact', $currentPath); ?>">Contact</a>
       <a href="https://blog.realestateinplayadelcarmen.com/" class="nav-blog">Blog</a>
-      <a href="/contact" class="nav-mobile-cta btn btn-primary btn-sm">Get in Touch</a>
     </nav>
 
     <div class="header-actions">
-      <a href="/contact" class="btn btn-primary btn-sm">Get in Touch</a>
       <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
