@@ -39,7 +39,7 @@
     <div class="footer-col">
       <h3>Contact</h3>
       <ul class="footer-contact">
-        <li><i data-lucide="map-pin" aria-hidden="true"></i> 5th Avenue, Playa del Carmen, Quintana Roo, Mexico</li>
+        <li><i data-lucide="map-pin" aria-hidden="true"></i> Calle 24, Playa del Carmen, Quintana Roo, Mexico</li>
         <li><i data-lucide="phone" aria-hidden="true"></i> <a href="tel:+529848015201">+52 984 801 5201</a></li>
         <li><i data-lucide="mail" aria-hidden="true"></i> <a href="mailto:info@realestateinplayadelcarmen.com">info@realestateinplayadelcarmen.com</a></li>
       </ul>
