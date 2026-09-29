@@ -24,7 +24,7 @@
         <li><a href="/properties">All Properties</a></li>
         <li><a href="/neighborhoods">Neighborhoods</a></li>
         <li><a href="/investment-guide">Investment Guide</a></li>
-        <li><a href="/blog">Blog</a></li>
+        <li><a href="https://blog.realestateinplayadelcarmen.com/">Blog</a></li>
       </ul>
     </div>
 
